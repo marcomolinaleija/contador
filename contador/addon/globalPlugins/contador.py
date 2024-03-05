@@ -2,7 +2,7 @@ import scriptHandler
 import api
 import ui
 import tones
-import globalPluginHandler  # Corregido para incluir la importación faltante
+import globalPluginHandler
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
     @scriptHandler.script(
@@ -34,13 +34,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
             ui.message(message)
         else:
             ui.message("No hay texto seleccionado.")
-            
-    def script_messageTesting(self, gesture):  # Nombre corregido para mejor claridad
-        ui.browseableMessage("Hola, quien sea que lea esto porque el puto nvda no me deja pedir datos por teclado", isHtml=False)
-
     def __init__(self):
         super(GlobalPlugin, self).__init__()
         self.bindGesture("kb:NVDA+shift+c", "countCharacters")
         self.bindGesture("kb:NVDA+shift+w", "countWords")
-    
-        self.bindGesture("kb:NVDA+shift+i", "messageTesting")
