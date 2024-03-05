@@ -1,2 +1,1 @@
-# contador
-complemento de NVDA que funciona para contar caracteres o palabras de un texto en el portapapeles
+[readme (1).md](https://github.com/marcomolinaleija/contador/files/14491634/readme.1.md)
