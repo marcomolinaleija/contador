@@ -3,13 +3,13 @@
 	"displayName": "contador",
 	"URL": "",
 	"description": "Complemento para contar palabras y caracteres",
-	"sha256": "586a9e31933371f55030be0b0db9c36dcc2a916c61f525555d14616207f53acb",
-	"homepage": null,
-	"addonVersionName": "2.0",
+	"sha256": "f63c861561f0f42574f252776006d052afd973e37a72f07e5cda3488c19dfe38",
+	"homepage": "None",
+	"addonVersionName": "2.0.1",
 	"addonVersionNumber": {
 		"major": 2,
 		"minor": 0,
-		"patch": 0
+		"patch": 1
 	},
 	"minNVDAVersion": {
 		"major": 0,
@@ -23,7 +23,7 @@
 	},
 	"channel": "stable",
 	"publisher": "",
-	"sourceURL": "None",
+	"sourceURL": "https://github.com/marcomolinaleija/contador",
 	"license": null,
 	"licenseURL": null
 }
