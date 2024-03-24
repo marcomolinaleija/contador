@@ -3,27 +3,32 @@ import api
 import ui
 import tones
 import globalPluginHandler
+import addonHandler
+addonHandler.initTranslation()
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
     @scriptHandler.script(
-        description="Cuenta del portapapeles la cantidad de caracteres de un texto.",
+        # Translators: Description of the script: Counts the number of characters in text from the clipboard.
+        description=_("Cuenta del portapapeles la cantidad de caracteres de un texto."),
         gesture="kb:NVDA+shift+C",
-        category="Contador"
+        category=_("Contador")
     )
     def script_countCharacters(self, gesture):
         tones.beep(1000, 100)
         text = api.getClipData()
         if text:
             count = len(text)
-            message = f"El texto tiene {count} caracteres."
+            message = _("El texto tiene {count} caracteres.").format(count=count)
             ui.message(message)
         else:
-            ui.message("No hay texto seleccionado.")
+            # Translators: Indicates that there is no text selected.
+            ui.message(_("No hay texto seleccionado."))
 
     @scriptHandler.script(
-        description="Cuenta del portapapeles la cantidad de palabras de un texto.",
+        # Translators: Description for the script: Counts the number of words in text from the clipboard.
+        description=_("Cuenta del portapapeles la cantidad de palabras de un texto."),
         gesture="kb:NVDA+shift+W",
-        category="Contador"
+        category=_("Contador")
     )
     def script_countWords(self, gesture):
         tones.beep(1000, 100)
@@ -31,22 +36,25 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
         if text:
             words = text.split()
             count = len(words)
-            message = f"El texto tiene {count} palabras."
+            message = _("El texto tiene {count} palabras.").format(count=count)
             ui.message(message)
         else:
-            ui.message("No hay texto seleccionado.")
+            # Translators: Indicates that there is no text selected.
+            ui.message(_("No hay texto seleccionado."))
 
     @scriptHandler.script(
-        description="Toma el texto de portapapeles, mostrándolo en una ventana de mensaje de NVDA.",
+        # Translators: Description for the script: Displays clipboard text in an NVDA browseable message window.
+        description=_("Muestra el texto del portapapeles en una ventana navegable de NVDA."),
         gesture="kb:NVDA+ctrl+E",
-        category="Contador"
+        category=_("Contador")
     )
     def script_readText(self, gesture):
         text = api.getClipData()
         if text:
-            ui.browseableMessage(text, "Texto", isHtml=False)
+            ui.browseableMessage(text, _("Texto en el portapapeles"), isHtml=False)
         else:
-            ui.message("Nó hay texto en el portapapeles")
+            # Translators: Indicates that there is no text on the clipboard.
+            ui.message(_("No hay texto en el portapapeles."))
 
     def __init__(self):
         super(GlobalPlugin, self).__init__()
