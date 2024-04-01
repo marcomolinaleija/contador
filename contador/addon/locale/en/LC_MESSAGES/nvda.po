@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the 'contador' package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 'contador' '2.0.1'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2024-03-31 17:45-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+#. Translators: Description of the script: Counts the number of characters in text from the clipboard.
+#: addon\globalPlugins\contador.py:12
+msgid "Cuenta del portapapeles la cantidad de caracteres de un texto."
+msgstr "Counts the number of characters in a text from the clipboard"
+#: addon\globalPlugins\contador.py:14 addon\globalPlugins\contador.py:31
+#: addon\globalPlugins\contador.py:49
+msgid "Contador"
+msgstr "counter"
+#: addon\globalPlugins\contador.py:21
+#, python-brace-format
+msgid "El texto tiene {count} caracteres."
+msgstr "The text has {count} characters"
+#. Translators: Indicates that there is no text selected.
+#: addon\globalPlugins\contador.py:25 addon\globalPlugins\contador.py:43
+msgid "No hay texto seleccionado."
+msgstr "No text selected"
+#. Translators: Description for the script: Counts the number of words in text from the clipboard.
+#: addon\globalPlugins\contador.py:29
+msgid "Cuenta del portapapeles la cantidad de palabras de un texto."
+msgstr "Counts the number of words in a text from the clipboard"
+#: addon\globalPlugins\contador.py:39
+#, python-brace-format
+msgid "El texto tiene {count} palabras."
+msgstr "The text has {count} words"
+#. Translators: Description for the script: Displays clipboard text in an NVDA browseable message window.
+#: addon\globalPlugins\contador.py:47
+msgid "Muestra el texto del portapapeles en una ventana navegable de NVDA."
+msgstr "Display the clipboard text in a navigable NVDA window"
+#: addon\globalPlugins\contador.py:54
+msgid "Texto en el portapapeles"
+msgstr "Text on clipboard"
+#. Translators: Indicates that there is no text on the clipboard.
+#: addon\globalPlugins\contador.py:57
+msgid "No hay texto en el portapapeles."
+msgstr "There is no text on the clipboard"
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#: buildVars.py:23
+msgid "contador"
+msgstr "counter"
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:26
+msgid "Complemento para contar palabras y caracteres"
+msgstr "Addon to count words and characters of a text in the clipboard"
