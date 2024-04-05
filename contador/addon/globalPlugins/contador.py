@@ -1,3 +1,8 @@
+# Contador. complemento para NVDA.
+# Este archivo está cubierto por la Licencia Pública General GNU
+# Consulte el archivo COPYING.txt para obtener más detalles.
+# Copyright (C) 2024 Marco Leija <marcomolinaleija@hotmail.com>
+
 import scriptHandler
 import api
 import ui
