@@ -6,7 +6,7 @@ Este complemento permite a los usuarios de NVDA contar los caracteres y palabras
 
 ## Funciones
 
-El complemento ofrece dos funciones principales:
+El complemento ofrece 3 funciones principales:
 
 - **Contar Caracteres:** Utiliza el atajo `NVDA+shift+C` para anunciar la cantidad de caracteres en el texto del portapapeles.
 - **Contar Palabras:** Utiliza el atajo `NVDA+shift+W` para anunciar la cantidad de palabras en el texto del portapapeles.
