@@ -16,6 +16,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
         # Translators: Description of the script: Counts the number of characters in text from the clipboard.
         description=_("Cuenta del portapapeles la cantidad de caracteres de un texto."),
         gesture="kb:NVDA+shift+C",
+        # Translators: Category name for the script
         category=_("Contador")
     )
     def script_countCharacters(self, gesture):
@@ -23,11 +24,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
         text = api.getClipData()
         if text:
             count = len(text)
+            # Translators: This message will show the number of characters in the text.
             message = _("El texto tiene {count} caracteres.").format(count=count)
             ui.message(message)
         else:
             # Translators: Indicates that there is no text selected.
-            ui.message(_("No hay texto seleccionado."))
+            ui.message(_("No hay texto en el portapapeles."))
 
     @scriptHandler.script(
         # Translators: Description for the script: Counts the number of words in text from the clipboard.
@@ -42,10 +44,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
             words = text.split()
             count = len(words)
             message = _("El texto tiene {count} palabras.").format(count=count)
+            # Translators: This message announces the number of words of the text contained in the clipboard.
             ui.message(message)
         else:
             # Translators: Indicates that there is no text selected.
-            ui.message(_("No hay texto seleccionado."))
+            ui.message(_("No hay texto en el portapapeles."))
 
     @scriptHandler.script(
         # Translators: Description for the script: Displays clipboard text in an NVDA browseable message window.
@@ -56,6 +59,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
     def script_readText(self, gesture):
         text = api.getClipData()
         if text:
+        # Translators: The next line shows the message, with the window title called text on the clipboard
             ui.browseableMessage(text, _("Texto en el portapapeles"), isHtml=False)
         else:
             # Translators: Indicates that there is no text on the clipboard.
@@ -63,6 +67,3 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
     def __init__(self):
         super(GlobalPlugin, self).__init__()
-        self.bindGesture("kb:NVDA+shift+c", "countCharacters")
-        self.bindGesture("kb:NVDA+shift+w", "countWords")
-        self.bindGesture("kb:NVDA+ctrl+E", "readText")

@@ -59,7 +59,7 @@ import os
 # For more information on SCons Glob expressions please take a look at:
 # https://scons.org/doc/production/HTML/scons-user/apd.html
 pythonSources = [
-    'addon/globalPlugins/*.py',
+    'addon/globalPlugins/contador.py',
     'addon/installTasks.py'
 ]
 

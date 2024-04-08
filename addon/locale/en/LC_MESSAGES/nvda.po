@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: 'contador' '2.0.1'\n"
+"Project-Id-Version: 'contador' '2.0.2'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2024-03-31 17:45-0600\n"
+"POT-Creation-Date: 2024-04-08 01:13-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,49 +16,75 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
 #. Translators: Description of the script: Counts the number of characters in text from the clipboard.
-#: addon\globalPlugins\contador.py:12
+#: addon\globalPlugins\contador.py:17
 msgid "Cuenta del portapapeles la cantidad de caracteres de un texto."
-msgstr "Counts the number of characters in a text from the clipboard"
-#: addon\globalPlugins\contador.py:14 addon\globalPlugins\contador.py:31
-#: addon\globalPlugins\contador.py:49
+msgstr "Counts the number of characters of a text in the clipboard."
+
+#. Translators: Category name for the script
+#: addon\globalPlugins\contador.py:20 addon\globalPlugins\contador.py:38
+#: addon\globalPlugins\contador.py:57
 msgid "Contador"
-msgstr "counter"
-#: addon\globalPlugins\contador.py:21
+msgstr "Counter"
+
+#. Translators: This message will show the number of characters in the text.
+#: addon\globalPlugins\contador.py:28
 #, python-brace-format
 msgid "El texto tiene {count} caracteres."
-msgstr "The text has {count} characters"
+msgstr "The text has {count} characters."
+
 #. Translators: Indicates that there is no text selected.
-#: addon\globalPlugins\contador.py:25 addon\globalPlugins\contador.py:43
-msgid "No hay texto seleccionado."
-msgstr "No text selected"
+#. Translators: Indicates that there is no text on the clipboard.
+#: addon\globalPlugins\contador.py:32 addon\globalPlugins\contador.py:51
+#: addon\globalPlugins\contador.py:66
+msgid "No hay texto en el portapapeles."
+msgstr "There is no text in the clipboard."
+
 #. Translators: Description for the script: Counts the number of words in text from the clipboard.
-#: addon\globalPlugins\contador.py:29
+#: addon\globalPlugins\contador.py:36
 msgid "Cuenta del portapapeles la cantidad de palabras de un texto."
-msgstr "Counts the number of words in a text from the clipboard"
-#: addon\globalPlugins\contador.py:39
+msgstr "Counts the number of words of a text in the clipboard."
+
+#: addon\globalPlugins\contador.py:46
 #, python-brace-format
 msgid "El texto tiene {count} palabras."
-msgstr "The text has {count} words"
+msgstr "The text has {count} words."
+
 #. Translators: Description for the script: Displays clipboard text in an NVDA browseable message window.
-#: addon\globalPlugins\contador.py:47
+#: addon\globalPlugins\contador.py:55
 msgid "Muestra el texto del portapapeles en una ventana navegable de NVDA."
-msgstr "Display the clipboard text in a navigable NVDA window"
-#: addon\globalPlugins\contador.py:54
+msgstr "Displays the clipboard text in a navigable NVDA window."
+
+#. Translators: The next line shows the message, with the window title called text on the clipboard
+#: addon\globalPlugins\contador.py:63
 msgid "Texto en el portapapeles"
-msgstr "Text on clipboard"
-#. Translators: Indicates that there is no text on the clipboard.
-#: addon\globalPlugins\contador.py:57
-msgid "No hay texto en el portapapeles."
-msgstr "There is no text on the clipboard"
+msgstr "Text in the clipboard"
+
+#. Translators: The text of the donate dialog
+#: addon\installTasks.py:24
+msgid ""
+"Contador  - complemento gratuito para NVDA.\n"
+"        Puedes hacer una donación a Marco Leija para ayudar en el desarrollo "
+"futuro de este complemento.\n"
+"        ¿Quieres hacer una donación ahora? Para la transacción, serás "
+"redirigido al sitio web de PayPal."
+msgstr ""
+"Counter - a free add-on for NVDA.\n"
+"        You can make a donation to Marco Leija to help with the future "
+"development of this add-on.\n"
+"        Would you like to make a donation now? For the transaction, you will "
+"be redirected to the PayPal website."
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on
 #. to be shown on installation and add-on information found in Add-ons Manager.
 #: buildVars.py:23
 msgid "contador"
-msgstr "counter"
+msgstr ""
+
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 #: buildVars.py:26
-msgid "Complemento para contar palabras y caracteres"
-msgstr "Addon to count words and characters of a text in the clipboard"
+msgid ""
+"Complemento para contar palabras y caracteres de un texto en el portapapeles"
+msgstr ""

@@ -2,36 +2,28 @@
 
 # Este archivo está cubierto por la Licencia Pública General de GNU.
 # Última actualización 2024
-# Derechos de autor (C) 2024 Ángel Alcántar <rayoalcantar@gmail.com>
+# Derechos de autor (C) 2024 Marco Leija <marcomolinaleija@hotmail.com>
 
 import addonHandler
 
-_N = _
 addonHandler.initTranslation()
 
 class donate:
     def open():
-        import languageHandler
         import webbrowser
-        lang = languageHandler.getLanguage()
-        # This check ensures the donation page is presented in Spanish if applicable.
-        if lang.startswith('es'):
-            lang = 'es'
-        else:
-            lang = 'en'
-        webbrowser.open(f"https://paypal.me/paymentToMl?lang={lang}")
+        webbrowser.open(f"https://paypal.me/paymentToMl")
 
     def request():
         import wx
         import gui
         
         # Translators: The title of the dialog requesting donations from users.
-        title = _N("Por favor, dona")
+        title =("Por favor, dona")
         
         # Translators: The text of the donate dialog
         message = _("""Contador  - complemento gratuito para NVDA.
-Puedes hacer una donación a Marco Leija para ayudar en el desarrollo futuro de este complemento.
-¿Quieres hacer una donación ahora? Para la transacción, serás redirigido al sitio web de PayPal.""")
+        Puedes hacer una donación a Marco Leija para ayudar en el desarrollo futuro de este complemento.
+        ¿Quieres hacer una donación ahora? Para la transacción, serás redirigido al sitio web de PayPal.""")
         
         name = addonHandler.getCodeAddon().manifest['summary']
         if gui.messageBox(message.format(name=name), title, style=wx.YES_NO|wx.ICON_QUESTION) == wx.YES:
