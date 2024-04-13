@@ -18,7 +18,7 @@ class donate:
         import gui
         
         # Translators: The title of the dialog requesting donations from users.
-        title =("Por favor, dona")
+        title =_("Por favor, dona")
         
         # Translators: The text of the donate dialog
         message = _("""Contador  - complemento gratuito para NVDA.

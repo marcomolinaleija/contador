@@ -25,7 +25,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description": _("""Complemento para contar palabras y caracteres de un texto en el portapapeles"""),
 	# version
-	"addon_version": "2.0.2",
+	"addon_version": "2.0.3",
 	# Author(s)
 	"addon_author": "Marco leija <marcomolinaleija@hotmail.com>",
 	# URL for the add-on documentation support

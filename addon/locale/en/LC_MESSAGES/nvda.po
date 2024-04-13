@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 'contador' '2.0.2'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2024-04-08 01:13-0600\n"
+"POT-Creation-Date: 2024-04-13 01:22-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,6 +61,11 @@ msgstr "Displays the clipboard text in a navigable NVDA window."
 msgid "Texto en el portapapeles"
 msgstr "Text in the clipboard"
 
+#. Translators: The title of the dialog requesting donations from users.
+#: addon\installTasks.py:21
+msgid "Por favor, dona"
+msgstr "please, donate."
+
 #. Translators: The text of the donate dialog
 #: addon\installTasks.py:24
 msgid ""
@@ -88,3 +93,4 @@ msgstr ""
 msgid ""
 "Complemento para contar palabras y caracteres de un texto en el portapapeles"
 msgstr ""
+"addon to count words and characters of a text on the clipboard"

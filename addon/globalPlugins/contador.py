@@ -4,6 +4,7 @@
 # Copyright (C) 2024 Marco Leija <marcomolinaleija@hotmail.com>
 
 import scriptHandler
+import globalVars
 import api
 import ui
 import tones
@@ -11,6 +12,12 @@ import globalPluginHandler
 import addonHandler
 addonHandler.initTranslation()
 
+def disableInSecureMode(decoratedCls):
+    if globalVars.appArgs.secure:
+        return globalPluginHandler.GlobalPlugin
+    return decoratedCls
+
+@disableInSecureMode
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
     @scriptHandler.script(
         # Translators: Description of the script: Counts the number of characters in text from the clipboard.
@@ -60,7 +67,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
         text = api.getClipData()
         if text:
         # Translators: The next line shows the message, with the window title called text on the clipboard
-            ui.browseableMessage(text, _("Texto en el portapapeles"), isHtml=False)
+            ui.browseableMessage(text, _("Texto en el portapapeles"), isHtml=True)
         else:
             # Translators: Indicates that there is no text on the clipboard.
             ui.message(_("No hay texto en el portapapeles."))

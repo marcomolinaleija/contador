@@ -14,8 +14,8 @@ The add-on offers two main features:
 
 ## 3\. Version History
 
-  * Version 1.0: Initial release with counting features.
-  * Version 2.0: Added the ability to reassign keyboard shortcuts and added a new category in NVDA's input gestures for these functions.
-  * Version 2.0.1: Added a feature that allows displaying the copied text in an NVDA message window. The initial shortcut for this function is `NVDA+control+E`.
-  * Version 2.0.2. The addon has been made translatable, now available in English
-
+1. Version 1.0: Initial release with counting features.
+2. Version 2.0: Added the ability to reassign keyboard shortcuts and added a new category in NVDA's input gestures for these functions.
+3. Version 2.0.1: Added a feature that allows displaying the copied text in an NVDA message window. The initial shortcut for this function is `NVDA+control+E`.
+4. Version 2.0.2. The addon has been made translatable, now available in English
+5. version 2.0.3. The addon will not run on secure screens.
