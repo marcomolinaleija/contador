@@ -18,3 +18,4 @@ El complemento ofrece dos funciones principales:
 3. Versión 2.0.1. Se agregó una función que permite visualizar el texto copiado en el portapapeles en una ventana de mensaje de NVDA. Utiliza el atajo inicial, NVDA + CTRL + E, modificable desde los gestos de entrada.
 4. Versión 2.0.2. Se ha hecho traducible el complemento, ahora disponible en idioma inglés.
 5. versión 2.0.3. El complemento no se ejecutará en pantallas seguras.
+6. Versión 2.0.4. Si se tiene algún texto html, por ejemplo: `<h1>Hola</h1>`, que muestra un encabezado, se mostrará el contenido formateado en la ventana de mensaje.
