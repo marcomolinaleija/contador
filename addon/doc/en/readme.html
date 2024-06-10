@@ -3,27 +3,46 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="../style.css" media="screen">
-<title>contador 2.0.4</title>
+<title>counter 2.0.5</title>
 </head>
 <body>
-<h1>NVDA Counter Add-on Documentation</h1>
-<h2>1. Utility</h2>
-<p>This add-on allows NVDA users to count the characters and words of text copied
-to the clipboard, providing results through keyboard shortcuts.</p>
-<h2>2. Features</h2>
-<p>The add-on offers two main features:</p>
+<h1>Counter, NVDA add-on</h1>
+<h2>General Description</h2>
+<p>This add-on will allow you to perform various functions with text.</p>
+<p>Whether you have it on your clipboard or selected in a text box, this will work.</p>
+<h2>Counter Functions</h2>
+<p>The following functions are available, both with a command layer and with an assignable gesture. You can access the gestures from NVDA menu &gt; preferences &gt; input gestures &gt; counter.</p>
+<p>Below are the functions.</p>
 <ul>
-<li><strong>Count Characters:</strong> Use the shortcut <code>NVDA+shift+C</code> to announce the number of characters in the clipboard text.</li>
-<li><strong>Count Words:</strong> Use the shortcut <code>NVDA+shift+W</code> to announce the number of words in the clipboard text.</li>
+<li>Count characters from the clipboard or a selected text.</li>
+<li>Count words from the clipboard or a selected text.</li>
+<li>Count lines from the clipboard or a selected text.</li>
+<li>View the text from the clipboard in an NVDA navigable window.</li>
 </ul>
-<h2>3. Version History</h2>
+<h2>Command Layer</h2>
+<p>The following keys perform an action while the command layer is active.</p>
+<ul>
+<li>c. Counts characters from the clipboard.</li>
+<li>alt+c. Counts characters from a selected text.</li>
+<li>p. Counts words from the clipboard.</li>
+<li>alt+p. Counts words from a selected text.</li>
+<li>l. Counts lines from the clipboard.</li>
+<li>alt+l. Counts lines from a selected text.</li>
+<li>m. Shows the text from the clipboard in an NVDA navigable window.</li>
+</ul>
+<p>When performing an action with the command layer, it will exit, deactivating itself. If for any reason a key that does not have an associated function is pressed, it will beep indicating that no function has been assigned to the pressed key.</p>
+<h2>Version History</h2>
 <ol>
-<li>Version 1.0: Initial release with counting features.</li>
-<li>Version 2.0: Added the ability to reassign keyboard shortcuts and added a new category in NVDA's input gestures for these functions.</li>
-<li>Version 2.0.1: Added a feature that allows displaying the copied text in an NVDA message window. The initial shortcut for this function is <code>NVDA+control+E</code>.</li>
-<li>Version 2.0.2. The addon has been made translatable, now available in English</li>
-<li>version 2.0.3. The addon will not run on secure screens.</li>
-<li>Version 2.0.4: If there is HTML text, for example: <code>&lt;h1&gt;Hello, this is text in HTML.&lt;/h1&gt;</code> It will display the formatted text in the message window.</li>
+<li><strong>Version 1.0.</strong> Initial release with counting functions.</li>
+<li><strong>Version 2.0.</strong> Added the ability to reassign keyboard shortcuts and added a new category in NVDA input gestures for these functions.</li>
+<li><strong>Version 2.0.1.</strong> Added a function that allows viewing the copied text on the clipboard in an NVDA message window. Uses the initial shortcut, NVDA + CTRL + E, modifiable from input gestures.</li>
+<li><strong>Version 2.0.2.</strong> Made the add-on translatable, now available in English.</li>
+<li><strong>Version 2.0.3.</strong> The add-on will not run on secure screens.</li>
+<li><strong>Version 2.0.4.</strong> If there is some html text, for example: <code>&lt;h1&gt;Hello&lt;/h1&gt;</code>, which shows a header, the formatted content will be displayed in the message window.</li>
+<li><strong>Version 2.0.5.</strong> The functionality to display html text has been temporarily removed. At the same time, a command layer has been added, which can be modified in input gestures. Initially, it has the command NVDA+shift+c.</li>
 </ol>
+<h2>Additional Notes</h2>
+<p>If you want to make a suggestion for the add-on, or even have an idea for another, you can contact me at the following link:</p>
+<p><a href="https://marco-ml.com/contacto.html">Contact Me</a></p>
 </body>
 </html>

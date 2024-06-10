@@ -25,11 +25,11 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description": _("""Complemento para contar palabras y caracteres de un texto en el portapapeles"""),
 	# version
-	"addon_version": "2.0.4",
+	"addon_version": "2.0.5",
 	# Author(s)
 	"addon_author": "Marco leija <marcomolinaleija@hotmail.com>",
 	# URL for the add-on documentation support
-	"addon_url": "https://github.com/marcomolinaleija/contador",
+	"addon_url": "https://marco-ml.com/contador",
 	# URL for the add-on repository where the source code can be found
 	"addon_sourceURL": "https://github.com/marcomolinaleija/contador",
 	# Documentation file name

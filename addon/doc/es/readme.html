@@ -3,27 +3,46 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="../style.css" media="screen">
-<title>contador 2.0.4</title>
+<title>contador 2.0.5</title>
 </head>
 <body>
-<h1>Documentación del Complemento Contador para NVDA</h1>
-<h2>Utilidad</h2>
-<p>Este complemento permite a los usuarios de NVDA contar los caracteres y palabras de un texto copiado en el portapapeles, proporcionando resultados a través de atajos de teclado.</p>
-<h2>Funciones</h2>
-<p>El complemento ofrece dos funciones principales:</p>
+<h1>Contador, complemento para NVDA</h1>
+<h2>Descripción General</h2>
+<p>Este complemento te permitirá realizar distintas funciones con un texto.</p>
+<p>Ya sea que lo tengas en tu portapapeles o seleccionado en un cuadro de texto, este funcionará.</p>
+<h2>Funciones del contador</h2>
+<p>Las siguientes funciones están disponibles, tanto con una capa de órdenes, como con algún gesto a asignar. Puedes acceder a los gestos desde menú NVDA &gt; preferencias &gt; gestos de entrada &gt; contador.</p>
+<p>A continuación, se presentan las funciones.</p>
 <ul>
-<li><strong>Contar Caracteres:</strong> Utiliza el atajo <code>NVDA+shift+C</code> para anunciar la cantidad de caracteres en el texto del portapapeles.</li>
-<li><strong>Contar Palabras:</strong> Utiliza el atajo <code>NVDA+shift+W</code> para anunciar la cantidad de palabras en el texto del portapapeles.</li>
-<li><strong>Mostrar el texto alojado en el portapapeles en una ventana navegable de NVDA, disponible desde la versión 2.0.1:</strong> Utiliza el atajo <code>NVDA+CTRL+E</code> para mostrar el texto.</li>
+<li>Contar caracteres del portapapeles, o de un texto seleccionado.</li>
+<li>Contar palabras desde el portapapeles, o de un texto seleccionado.</li>
+<li>Contar líneas desde el portapapeles, o de un texto seleccionado.</li>
+<li>Mirar el texto del portapapeles en una ventana navegable de NVDA.</li>
 </ul>
-<h2>Historial de Versiones</h2>
+<h2>Capa de comandos</h2>
+<p>Las siguientes teclas ejecutan una acción mientras la capa de comandos esté activa.</p>
+<ul>
+<li>c. Cuenta caracteres desde el portapapeles.</li>
+<li>alt+c. Cuenta caracteres de un texto seleccionado.</li>
+<li>p. Cuenta palabras desde el portapapeles.</li>
+<li>alt+p. Cuenta palabras de un texto seleccionado.</li>
+<li>l. Cuenta las líneas desde el portapapeles.</li>
+<li>alt+l. Cuenta líneas de un texto seleccionado.</li>
+<li>m. Muestra el texto del portapapeles en una ventana navegable de NVDA.</li>
+</ul>
+<p>Al realizar alguna acción con la capa de comandos, esta saldrá, desactivándose. Si por alguna razón se llega a presionar una tecla que no tenga una función asociada, hará un beep indicando que no se ha asignado alguna función para la tecla presionada.</p>
+<h2>Historial de versiones</h2>
 <ol>
-<li>Versión 1.0. Lanzamiento inicial con las funciones de conteo.</li>
-<li>Versión 2.0. Añadida la posibilidad de reasignar atajos de teclado y agregada una nueva categoría en los gestos de entrada de NVDA para estas funciones.</li>
-<li>Versión 2.0.1. Se agregó una función que permite visualizar el texto copiado en el portapapeles en una ventana de mensaje de NVDA. Utiliza el atajo inicial, NVDA + CTRL + E, modificable desde los gestos de entrada.</li>
-<li>Versión 2.0.2. Se ha hecho traducible el complemento, ahora disponible en idioma inglés.</li>
-<li>versión 2.0.3. El complemento no se ejecutará en pantallas seguras.</li>
-<li>Versión 2.0.4. Si se tiene algún texto html, por ejemplo: <code>&lt;h1&gt;Hola&lt;/h1&gt;</code>, que muestra un encabezado, se mostrará el contenido formateado en la ventana de mensaje.</li>
+<li><strong>Versión 1.0.</strong> Lanzamiento inicial con las funciones de conteo.</li>
+<li><strong>Versión 2.0.</strong> Añadida la posibilidad de reasignar atajos de teclado y agregada una nueva categoría en los gestos de entrada de NVDA para estas funciones.</li>
+<li><strong>Versión 2.0.1.</strong> Se agregó una función que permite visualizar el texto copiado en el portapapeles en una ventana de mensaje de NVDA. Utiliza el atajo inicial, NVDA + CTRL + E, modificable desde los gestos de entrada.</li>
+<li><strong>Versión 2.0.2.</strong> Se ha hecho traducible el complemento, ahora disponible en idioma inglés.</li>
+<li><strong>Versión 2.0.3.</strong> El complemento no se ejecutará en pantallas seguras.</li>
+<li><strong>Versión 2.0.4.</strong> Si se tiene algún texto html, por ejemplo: <code>&lt;h1&gt;Hola&lt;/h1&gt;</code>, que muestra un encabezado, se mostrará el contenido formateado en la ventana de mensaje.</li>
+<li><strong>Versión 2.0.5.</strong> Se ha removido la funcionalidad de mostrar texto html de forma temporal. Al mismo tiempo, se ha añadido una capa de comandos, la cual puede ser modificada en los gestos de entrada. Inicialmente, tiene el comando NVDA+shift+c.</li>
 </ol>
+<h2>Notas adicionales</h2>
+<p>Si deseas realizar alguna sugerencia para el complemento, o incluso tienes alguna idea para otro, puedes ponerte en contacto desde el siguiente enlace:</p>
+<p><a href="https://marco-ml.com/contacto.html">Contáctame</a></p>
 </body>
 </html>
