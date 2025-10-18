@@ -39,7 +39,9 @@ Al realizar alguna acción con la capa de comandos, esta saldrá, desactivándos
 4. **Versión 2.0.2.** Se ha hecho traducible el complemento, ahora disponible en idioma inglés.
 5. **Versión 2.0.3.** El complemento no se ejecutará en pantallas seguras.
 6. **Versión 2.0.4.** Si se tiene algún texto html, por ejemplo: `<h1>Hola</h1>`, que muestra un encabezado, se mostrará el contenido formateado en la ventana de mensaje.
-7. **Versión 2.0.5.** Se ha removido la funcionalidad de mostrar texto html de forma temporal. Al mismo tiempo, se ha añadido una capa de comandos, la cual puede ser modificada en los gestos de entrada. Inicialmente, tiene el comando NVDA+shift+c.
+7. **Versión 2.0.5.** Se ha removido la funcionalidad de mostrar texto html. También, se ha añadido una capa de comandos, la cual puede ser modificada en los gestos de entrada. Inicialmente, tiene el comando NVDA+shift+c.
+8. **Versión 2.0.6.** actualizado para que sea compatible con NVDA 2025.
+
 
 ## Notas adicionales
 

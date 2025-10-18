@@ -40,6 +40,7 @@ When performing an action with the command layer, it will exit, deactivating its
 5. **Version 2.0.3.** The add-on will not run on secure screens.
 6. **Version 2.0.4.** If there is some html text, for example: `<h1>Hello</h1>`, which shows a header, the formatted content will be displayed in the message window.
 7. **Version 2.0.5.** The functionality to display html text has been temporarily removed. At the same time, a command layer has been added, which can be modified in input gestures. Initially, it has the command NVDA+shift+c.
+8. **Version 2.0.6.** updated to support NVDA 2025.
 
 ## Additional Notes
 

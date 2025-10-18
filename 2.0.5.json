@@ -1,0 +1,29 @@
+{
+	"addonId": "contador",
+	"displayName": "contador",
+	"URL": "",
+	"description": "Complemento para contar palabras y caracteres de un texto en el portapapeles",
+	"sha256": "d85d13174e3189453af4cb86004771d3cd365c745a6e9a380da7fe32a0775670",
+	"homepage": "https://marco-ml.com/contador",
+	"addonVersionName": "2.0.5",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 0,
+		"patch": 5
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "",
+	"sourceURL": "https://github.com/marcomolinaleija/contador",
+	"license": "GPL 2",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html"
+}
